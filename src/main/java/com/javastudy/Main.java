@@ -2,7 +2,7 @@ package com.javastudy;
 
 public class Main {
     public static void main(String[] args) {
-       
+       //Student Aldo = new Student();
     }
     
     public static void basic() {
@@ -62,7 +62,7 @@ public class Main {
         
         // two ways of concatenation of String
         String concatString = "Ejemplo de ";
-        System.out.println(concatString.concat("concatenación") + " en Java");
+        System.out.println(concatString.concat("concatenaciï¿½n") + " en Java");
         
         // Math useful methods
         System.out.println(Math.max(3, 5)); // get the maximum number out of two
@@ -77,16 +77,16 @@ public class Main {
         final boolean alwaysTrue = true;
         final int alwaysOne = 1;
         // if...else if...else
-        if (alwaysTrue) System.out.println("En el IF"); else if (alwaysTrue) System.out.println("No llega aquí"); else System.out.println("No llega aquí");
+        if (alwaysTrue) System.out.println("En el IF"); else if (alwaysTrue) System.out.println("No llega aquï¿½"); else System.out.println("No llega aquï¿½");
         // short hand if..else / ternary operator
-        System.out.println((alwaysTrue) ? "Este es el short hand if...else" : "No llega aquí");
+        System.out.println((alwaysTrue) ? "Este es el short hand if...else" : "No llega aquï¿½");
         // switch
         switch(alwaysOne) {
         	case 1:
         		System.out.println("Este es el switch");
         		break;
         	default:
-        		System.out.println("No llega aquí"); // does not need a break statement
+        		System.out.println("No llega aquï¿½"); // does not need a break statement
         }
         
         // Loops
@@ -156,9 +156,10 @@ public class Main {
     	// classes must be inside their own .java file
     	// classes names must start with uppercase letter at the beginning and must match the .java file name
     }
-    
+	
+    // how to define a class
     // <accessModifier> class <className> {}
-    public class student {
-    	String name;
+    public class Student {
+    	String name; // class attributes are variables within a class
     }
 }

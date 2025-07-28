@@ -2,7 +2,15 @@ package com.javastudy;
 
 public class Main {
     public static void main(String[] args) {
-       //Student Aldo = new Student();
+    	// how to create an instance of a class
+    	// <className> <instanceName> = new <className>();
+       Object mundo = new Object("Mundo");
+       
+       // how to call a non-static method
+       mundo.showName();
+       
+       // how to call a static method
+       Object.staticShowName();
     }
     
     public static void basic() {
@@ -149,17 +157,5 @@ public class Main {
     // <accessModifier> <returnType> <methodName>(<parameterType> <parameterName>, ...) {}
     public static int myMethod() {
     	return 0;
-    }
-    
-    public static void javaClasses() {
-    	// OOP - Object-Oriented Programming
-    	// classes must be inside their own .java file
-    	// classes names must start with uppercase letter at the beginning and must match the .java file name
-    }
-	
-    // how to define a class
-    // <accessModifier> class <className> {}
-    public class Student {
-    	String name; // class attributes are variables within a class
     }
 }
